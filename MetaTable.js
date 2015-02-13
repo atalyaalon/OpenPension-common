@@ -6,7 +6,7 @@ exports.getMetaTable = function(){
 	//TODO: trim all values
 	var metaTable = {
 		hebrewColumns: 			parsedLines.shift().split(",").slice(2,parsedLines[0].length),
-		englishColumns: 		parsedLines.shift().split(",").slice(2,parsedLines[0].length).map(function(c) { return c.replace(/\s/g, "_").toLowerCase(); }),
+		englishColumns: 		parsedLines.shift().replace(/(\r\n|\n|\r)/gm,"").split(",").slice(2,parsedLines[0].length).map(function(c) { return c.replace(/\s/g, "_").toLowerCase(); }),
 		dataTypes: 				parsedLines.shift().split(",").slice(2,parsedLines[0].length),
 		measures: 				parsedLines.shift().split(",").slice(2,parsedLines[0].length),
 		instrumentTypes: 		parsedLines.map(function(l){return l.split(",")[0]}),
