@@ -1,9 +1,9 @@
-קטגוריית נכס,נכס,שם נייר ערך,מספר נייר ערך,נכס הבסיס,ענף מסחר,דירוג,שם המדרג,תאריך רכישה,"מח""מ",סוג מטבע,שיעור ריבית,תשואה לפדיון,ערך נקוב,שער,שווי שוק,שווי הוגן,שיעור מהערך הנקוב המונפק,שיעור מנכסי ההשקעה,תאריך שערוך אחרון,אופי הנכס,שעור תשואה במהלך התקופה
-Instrument Type,Instrument Sub Type,Instrument Symbol,Instrument ID,Underlying Asset,Industry,Rating,Rating Agency,Date of Purchase,Average of Duration,Currency,Intrest Rate,Yield,Par Value,Rate,Market Cap,Fair Value,Rate of IPO,Rate of Fund,Date of Revaluation,Type of Asset,tmp name
-סוג משתנה,string,string,string,string,string,string,string,date,number,string,number,number,number,number,number,number,number,number,date,string,number
-יחידה,,,,,,,,תאריך,שנים,,%,%,₪,אג',אלפי ₪,,%,%,,,
+קטגוריית נכס,נכס,שם נייר ערך,מספר נייר ערך,נכס הבסיס,ענף מסחר,דירוג,שם המדרג,תאריך רכישה,"מח""מ",סוג מטבע,שיעור ריבית,תשואה לפדיון,ערך נקוב,שער,שווי שוק,שווי הוגן,שיעור מהערך הנקוב המונפק,שיעור מנכסי ההשקעה,תאריך שערוך אחרון,אופי הנכס,שעור תשואה במהלך התקופה,מספר מנפיק
+Instrument Type,Instrument Sub Type,Instrument Symbol,Instrument ID,Underlying Asset,Industry,Rating,Rating Agency,Date of Purchase,Average of Duration,Currency,Intrest Rate,Yield,Par Value,Rate,Market Cap,Fair Value,Rate of IPO,Rate of Fund,Date of Revaluation,Type of Asset,tmp name,Issuer number
+סוג משתנה,string,string,string,string,string,string,string,date,number,string,number,number,number,number,number,number,number,number,date,string,number,number
+יחידה,,,,,,,,תאריך,שנים,,%,%,₪,אג',אלפי ₪,,%,%,,,,
 סכום נכסי הקרן,,0,,,,,,,,,,,,,,1,,2,,,
-מזומנים,,0,1,,,2,3,,,4,5,6,,,7,,,8,,,
+מזומנים,,0,1,,,2,3,,,4,5,6,,,7,,,8,,,,9
 ניירות ערך סחירים,תעודות התחייבות ממשלתיות,0,1,,,2,3,4,5,6,7,8,9,10,11,,12,13,,,
 ניירות ערך סחירים,תעודות חוב מסחריות,0,1,,2,3,4,5,6,7,8,9,10,11,12,,13,14,,,
 ניירות ערך סחירים,"אג""ח קונצרני",0,1,,2,3,4,5,6,7,8,9,10,11,12,,13,14,,,
