@@ -12,11 +12,11 @@ exports.getMetaTable = function(){
 		instrumentTypes: 		parsedLines.map(function(l){return l.split(",")[0]}),
 		instrumentSubTypes : 	parsedLines.map(function(l){return l.split(",")[1]}),
 		dataMapping: 			parsedLines.map(function(l){ return l.split(",").slice(2,l.split(",").length) }),
-		getNameForSheetNum: 	function(sheetNum){
+		getNameForSheetNum:		function(sheetNum){
 			return this.instrumentTypes[sheetNum] + " " + this.instrumentSubTypes[sheetNum];
 		},
 		getLastSheetNum:		function(){ return this.dataMapping.length -1 },
-		columnMappingForRow: 	function(rowId){
+		getHeadersForTab:		function(rowId){
 			var output = [];
 			for (var i = 0; i < this.dataMapping[rowId].length ; i++ ){
 				var rowValue = parseInt(this.dataMapping[rowId][i]);
